@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модальные окна</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>Модальное окно </h2>
+          </div>
+        <button class = 'btn-modal' data-modal-button = 'modal-1' type="button">Открыть модальное окно 1 </button>
+        <button class = 'btn-modal' data-modal-button = 'modal-2' type="button">Открыть модальное окно 2 </button>
+        <button class = 'btn-modal' data-modal-button = 'modal-3' type="button">Открыть модальное окно 3 </button>
+
+        <div class="fade-block hidden" id = 'modal-1' data-modal>
+            <div class="modal-window">
+                <div class="card">
+                    <div class="card-header">
+                        Модальное окно №1
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dicta magnam 
+                            laboriosam voluptas quae expedita molestias voluptate, deleniti repudiandae numquam, est sapiente? 
+                            Libero eligendi assumenda cumque maxime magnam odio commodi?
+                        </p>
+                        <button class="btn" data-modal-close type="button"> Закрыть окно</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fade-block hidden" id = 'modal-2' data-modal>
+            <div class="modal-window">
+                <div class="card">
+                    <div class="card-header">
+                        Модальное окно №2
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dicta magnam 
+                            laboriosam voluptas quae expedita molestias voluptate, deleniti repudiandae numquam, est sapiente? 
+                            Libero eligendi assumenda cumque maxime magnam odio commodi?
+                        </p>
+                        <button class="btn" data-modal-close type="button"> Закрыть окно</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fade-block hidden" id = 'modal-3' data-modal>
+            <div class="modal-window">
+                <div class="card">
+                    <div class="card-header">
+                        Модальное окно №3
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dicta magnam 
+                            laboriosam voluptas quae expedita molestias voluptate, deleniti repudiandae numquam, est sapiente? 
+                            Libero eligendi assumenda cumque maxime magnam odio commodi?
+                        </p>
+                        <button class="btn" data-modal-close type="button"> Закрыть окно</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/modal-02.js"></script>
+</body>
+</html>
+
