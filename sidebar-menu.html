@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Боковое меню</title>
+    <link rel="stylesheet" href="css/sidebar-menu.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar__text">Side Menu</div>
+        <ul>
+            <li><a href="">Главная</a></li>
+            <li>
+                <a href="#" data-drop ="drop-1">Каталог
+                    <span>></span>
+                </a>
+                <ul class="hidden" data-drop-content id="drop-1">
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Главная</a></li>
+                </ul>
+            </li>
+            <li><a href="#" data-drop ="drop-2">Сервисы
+                    <span>></span>
+                </a>
+                <ul class="hidden" data-drop-content id="drop-2">
+                    <li><a href="">Главная-2</a></li>
+                    <li><a href="">Главная-2</a></li>
+                </ul>
+            </li>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Главная</a></li>
+        </ul>
+    </nav>
+    <script src="./js/sidebar-menu.js"></script>
+</body>
+</html>
