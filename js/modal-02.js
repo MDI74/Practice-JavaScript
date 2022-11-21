@@ -9,7 +9,7 @@ buttons.forEach(function(item){
        const modal = document.querySelector('#' + this.dataset.modalButton);
        modal.classList.remove('hidden');
 
-       //Находим внутри открывемой модалки .modal-window и запрещаем передвать клики родителям
+       //Находим внутри открывемой модалки .modal-window и запрещаем передавать клики родителям
        modal.querySelector('.modal-window').addEventListener('click', function(event){ // поиск только внутри данного элемента modal и прослушка по клику
             event.stopPropagation(); // останавливает передачу события выше т.е родителям это позволяет кликать внутри окна и не закрывать модальное окно
        })
