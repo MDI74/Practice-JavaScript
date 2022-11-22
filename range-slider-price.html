@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range slider</title>
+    <link rel="stylesheet" href="./css/nouislider.min.css">
+    <link rel="stylesheet" href="./css/range-slider-price.css">
+</head>
+<body>
+    <div class="container">
+        <div class="filters">
+            <div class="filters__item filters-price">
+                <h3 class="filter-price__title">Цена</h3>
+                <div class="filters-price__slider" id="range-slider"></div>
+                <div class="filters-price__inputs">
+                    <label class="filters-price__lable">
+                        <span class="filters-price__text">от</span>
+                        <input type="number" min="500" max="999999" placeholder="500" class="filters-price__input" id="input-0">
+                        <span class="filters-price__text">₽</span>
+                    </label>
+                    <label class="filters-price__lable">
+                        <span class="filters-price__text">до</span>
+                        <input type="number" min="500" max="999999" placeholder="999999"  class="filters-price__input" id="input-1">
+                        <span class="filters-price__text">₽</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/nouislider.min.js"></script>
+    <script src="./js/range-slider-price.js"></script>
+</body>
+</html>
