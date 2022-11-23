@@ -15,7 +15,7 @@ if (rangeSlider) {
     const inputs = document.querySelectorAll('.filters-price__input')
 
 
-    rangeSlider.noUiSlider.on('update', function(values, handle){ //обновляет значения при изменении слайдера values хранит значения, handle выводит 0 если левый ползунок двигается 1 правый
+    rangeSlider.noUiSlider.on('update', function(values, handle){ // Обновляет значения при изменении слайдера values хранит значения, handle выводит 0 если левый ползунок двигается 1 правый
         inputs[handle].value = Math.round(values[handle]); // Управляет двумя инпутами и изменяем значение в строках при движении слайдера
     });
 

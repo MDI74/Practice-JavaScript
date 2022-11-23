@@ -1,0 +1,13 @@
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.section{
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: rgb(233, 224, 222);
+}

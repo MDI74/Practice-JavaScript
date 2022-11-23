@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Получение данных их форм</title>
+    <link rel="stylesheet" href="./css/getting-data-from-form.css">
+</head>
+<body>
+    <div class="container">
+        <section class="section">
+            <h3>1. Input[type="text"]</h3>
+            <input type="text" class="i-1">
+            <button class="btn-1">from input</button>
+            <div class="out-block out-1"></div>
+        </section>
+        <section class="section">
+            <h3>2. Input[type="nubmer"]</h3>
+            <input type="number" class="i-2">
+            <button class="btn-2">from input</button>
+            <div class="out-block out-2"></div>
+        </section>
+        <section class="section">
+            <h3>4. Input[type="color"]</h3>
+            <input type="color" class="i-3">
+            <button class="btn-3">from input</button>
+            <div class="out-block out-3"></div>
+        </section>
+        <section class="section">
+            <h3>4. Input[type="color"]</h3>
+            <input type="date" class="i-4">
+            <button class="btn-4">from input</button>
+            <div class="out-block out-4"></div>
+        </section>
+        <section class="section">
+            <h3>5. Input[type="range"]</h3>
+            <input type="range" class="i-5">
+            <button class="btn-5">from input</button>
+            <div class="out-block out-5"></div>
+        </section>
+        <section class="section">
+            <h3>6. Input[type="checkbox"]</h3>
+            <input type="checkbox" class="i-6" id="i6" value="Check">
+            <label for="i6">checkbox</label>
+            <button class="btn-6">from input</button>
+            <div class="out-block out-6"></div>
+        </section>
+        <section class="section">
+            <h3>7. Input[type="radio"]</h3>
+            <div>
+                <input type="radio" class="i-7" id="i71" checked name="radio-btn-1" value="1">
+                <label for="i71">Option 1</label>
+            </div>
+            <div>
+                <input type="radio" class="i-7" id="i72" name="radio-btn-1" value="2">
+                <label for="i72">Option 2</label>
+            </div>
+            <div>
+                <input type="radio" class="i-7" id="i73" name="radio-btn-1" value="3">
+                <label for="i73">Option 3</label>
+            </div>
+            <button class="btn-7">from input</button>
+            <div class="out-block out-7"></div>
+        </section>
+        <section class="section">
+            <h3>8. Input[type="password"]</h3>
+            <input type="password" class="i-8">
+            <button class="btn-8">from input</button>
+            <div class="out-block out-8"></div>
+        </section>
+        <section class="section">
+            <h3>9. Input[type="email"]</h3>
+            <input type="email" class="i-9">
+            <button class="btn-9">from input</button>
+            <div class="out-block out-9"></div>
+        </section>
+        <section class="section">
+            <h3>10. Select</h3>
+            <select class="s-10">
+                <option value="hello">Text 1</option>
+                <option value="foo">Text 2</option>
+                <option value="ew">Text 3</option>
+                <option value="dsfdsf">Text 4</option>
+            </select>
+            <button class="btn-10">from input</button>
+            <div class="out-block out-10"></div>
+        </section>
+        <section class="section">
+            <h3>11. Textarea</h3>
+            <textarea class="t-11"></textarea>
+            <button class="btn-11">from input</button>
+            <div class="out-block out-11"></div>
+        </section>
+        <section class="section">
+            <form>
+                <div>
+                    <input type="text" name="myinput">
+                </div>
+                <div>
+                    <input type="checkbox", value = "555", id="form-ch-1" name="mycheckbox">
+                    <label for="form-ch-1">checkbox</label>
+                </div>
+                <div>
+                    <input type="radio", value = "1", id="form-radio-1" name="myradio" checked>
+                    <label for="form-radio-1">radio 1</label>
+                </div>
+                <div>
+                    <input type="radio", value = "2", id="form-radio-2" name="myradio">
+                    <label for="form-radio-2">radio 2</label>
+                </div>
+                <div>
+                    <input type="radio", value = "3", id="form-radio-3" name="myradio">
+                    <label for="form-radio-3">radio 3</label>
+                </div>
+                <div>
+                    <select id="myselect">
+                        <option value="hello">Text 1</option>
+                        <option value="foo">Text 2</option>
+                        <option value="ew">Text 3</option>
+                        <option value="dsfdsf">Text 4</option>
+                    </select>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+    <script src="./js/getting-data-from-form.js"></script>
+</body>
+</html>
