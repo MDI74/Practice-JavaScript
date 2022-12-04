@@ -4,7 +4,7 @@ const contentBoxes = document.querySelectorAll('[data-tab-content'); // нахо
 tabHeaders.forEach(function (item) { 
     item.addEventListener('click', function () { 
 
-       const contentBox = document.querySelector('#' + this.dataset.tab); //Выбираем нужный элемент по полученому data-tab с помощью конкретинации 
+       const contentBox = document.querySelector('#' + this.dataset.tab); //Выбираем нужный элемент по полученому data-tab с помощью конкретенации 
 
        contentBoxes.forEach(function (item) { //обходим все контент боксы
             item.classList.add('hidden'); //добавляем к каждому hidden
