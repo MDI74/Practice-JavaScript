@@ -94,7 +94,7 @@ function disemvowel(str) {
 disemvowel('This website is for losers LOL!');
 
 
-//Задача 7: Найти сумму чисел числа, делать до того как число получится одозначным
+//Задача 7: Найти сумму чисел числа, делать до того как число получится однозначным
 function digitalRoot(n) {
     sum = 0;
     while (n) {
@@ -200,4 +200,9 @@ var summation = function (num) {
       return 1
     }
     return (num)+summation(num-1)
-  }
+}
+
+//Задача 12: Функция bar_triang() получает координаты трех вершин A, B and C в виде трех разных аргументов и выводит координаты барицентра Oв виде массива [xO, yO]
+function barTriang(p1, p2, p3){
+    return [Math.round(((p1[0]+p2[0]+p3[0])/3) * Math.pow(10, 4)) / Math.pow(10, 4), Math.round(((p1[1]+p2[1]+p3[1])/3) * Math.pow(10, 4)) / Math.pow(10, 4)]
+}
