@@ -190,19 +190,70 @@ function solution(start, finish)
      move+=1;
    }
  }
- return move
+ return move;
 }
 
 
 //Задача 11: Напишите программу, которая находит суммирование каждого числа от 1 до num. Число всегда будет положительным целым числом, большим 0.
 var summation = function (num) {
     if (num ==1){
-      return 1
+      return 1;
     }
-    return (num)+summation(num-1)
+    return (num)+summation(num-1);
 }
 
 //Задача 12: Функция bar_triang() получает координаты трех вершин A, B and C в виде трех разных аргументов и выводит координаты барицентра Oв виде массива [xO, yO]
 function barTriang(p1, p2, p3){
     return [Math.round(((p1[0]+p2[0]+p3[0])/3) * Math.pow(10, 4)) / Math.pow(10, 4), Math.round(((p1[1]+p2[1]+p3[1])/3) * Math.pow(10, 4)) / Math.pow(10, 4)]
+}
+
+//Задача 13: Вы получите trash1и trash2, что может быть следующими значениями:
+//[], false, '', new Array(), null, NaN, undefined, 0, -0, 0n, -0n, '0'
+//Вы должны вернуть логическое значение, если они строго равны.
+//Нельзя использовать === !===
+function compareTrash(trash1, trash2){
+    if (typeof(trash1) == "undefined" && typeof(trash2) == "undefined"){
+      return true;
+    }
+    if (isNaN(trash1) && isNaN(trash2)){
+      return false;
+    }
+    if (typeof trash1 == 'number'){
+      trash1 = Math.abs(trash1);
+    }
+    if (typeof trash2 == 'number'){
+      trash2 = Math.abs(trash2);
+    }
+
+    if (Object.is(trash1, trash2)){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+console.log(compareTrash(undefined, undefined))
+
+//Задача 14: Гипотеза Коллатца (также известная как гипотеза 3n + 1) - это гипотеза о том, что, применяя следующий алгоритм к любому числу, мы всегда в конечном итоге достигнем единицы:
+
+//[This is writen in pseudocode]
+//if(number is even) number = number / 2
+//if(number is odd) number = 3*number + 1
+//Ваша задача - создать функцию hotpo, которая принимает положительное 
+//n значение в качестве входных данных и возвращает количество раз,
+//которое вам нужно выполнить , чтобы получить этот алгоритм n = 1.
+var hotpo = function(n){
+    if(n == 0 || n == 1) return 0; 
+    counter = 0;
+    while(n != 1)
+      if (n % 2 ==0){
+        n = n / 2;
+        counter+=1;
+      }
+      else{
+        n = 3*n+1;
+        counter+=1;
+      } 
+    return counter;   
 }
