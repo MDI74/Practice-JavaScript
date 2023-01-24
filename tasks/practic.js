@@ -303,7 +303,7 @@ const humanReadable = (seconds) => {
 }
 
 //Задача 18 Число триббоначи
-const fib = (sig,n) =>{
+const fib = (sig,n) => {
     const size = sig.length
     if (n === 0){
         return []
@@ -315,4 +315,18 @@ const fib = (sig,n) =>{
         sig.push(sig[i] + sig[i+1] + sig[i+2])
     }
     return sig
+}
+
+//Задача 19 Функция rgb неполная. Завершите его, чтобы передача десятичных значений RGB приводила к возврату шестнадцатеричного представления. 
+//Допустимые десятичные значения для RGB: 0–255. Любые значения, выпадающие из этого диапазона, должны быть округлены до ближайшего допустимого значения.
+const rgb = (r, g, b) => {
+    const array = []
+    array.push(r, g, b);
+    result = []
+    for (el of array) {
+        el > 255 ? el = 255 : el
+        el < 0 ? el = 0 : el
+        el === 0 ? result.push('00') : result.push((el).toString(16).toUpperCase());
+    }
+    return result.join('');
 }
